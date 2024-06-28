@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Split</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-container">
+            <p>Bill</p>
+            <div class="bill-amount-tip">
+                <p>₹</p>
+                <input type="number" id="bill-amount">
+            </div>
+            <p>Select Tip</p>
+            <div class="tip-butttons">
+                <button id="tip-5" class="tip-btn" value="5">5%</button>
+                <button id="tip-10" class="tip-btn" value="10">10%</button>
+                <button id="tip-15" class="tip-btn" value="15">15%</button>
+                <button id="tip-20" class="tip-btn" value="20">20%</button>
+                <button id="tip-25" class="tip-btn" value="25">25%</button>
+                <button id="tip-30" class="tip-btn" value="30">30%</button>
+            </div>
+            <div class="custom-tip-input">
+                <input type="text" placeholder="Custom Tip" id="custom-tip">
+            </div>
+            <p class="m-b-1">Number of People</p>
+            <div class="input">
+                <input type="number" placeholder="No of people" id="people-number">
+            </div>
+            <button id="generate-bill">Generate Bill</button>
+        </div>
+        <div class="right-container">
+            <div class="tip-container row">
+                <h4>Tip Amount</h4>
+                <h2 id="show-tip"></h2>
+            </div>
+            <div class="total-amount row">
+                <h4>Total</h4>
+                <h2 id="show-total"></h2>
+            </div>
+            <div class="each-person-bill row">
+                <h4>Each Person Bill</h4>
+                <h2 id="show-each-person"></h2>
+            </div>
+            <button id="reset-btn">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
